@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import LoadingScreen from './components/LoadingScreen';
-import Desktop from './components/Desktop';
-import Taskbar from './components/Taskbar';
-import Window from './components/Window';
-import StartMenu from './components/StartMenu';
-import { AppId, WindowState } from './types';
-import { BACKGROUNDS } from './constants';
+import LoadingScreen from '@/components/LoadingScreen';
+import Desktop from '@/components/Desktop';
+import Taskbar from '@/components/Taskbar';
+import Window from '@/components/Window';
+import StartMenu from '@/components/StartMenu';
+import { AppId, WindowState } from '@/types';
+import { BACKGROUNDS } from '@/constants';
 
 const INITIAL_WINDOWS: WindowState[] = [
   { id: AppId.TRASH, title: 'TRASH', isOpen: false, isMinimized: false, zIndex: 10, position: { x: 100, y: 100 } },

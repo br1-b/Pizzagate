@@ -24,8 +24,12 @@
       ]
     },
     "allowImportingTsExtensions": true,
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
-  "include": ["src", "**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "types.ts", "constants.tsx"],
   "exclude": ["node_modules", "dist"]
 }
